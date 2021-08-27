@@ -1,0 +1,18 @@
+.about {
+  .container {
+    position: relative;
+  }
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 70px;
+  }
+  &-content {
+    max-width: 470px;
+  }
+  &-image {
+    position: absolute;
+    right: -290px;
+  }
+}
