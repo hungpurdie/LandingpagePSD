@@ -11,8 +11,14 @@
   color: white;
   line-height: lineH(56, 36);
   margin-bottom: 30px;
+  &--big {
+    font-size: 60px;
+  }
 }
 
 .text {
   line-height: lineH(34, 18);
+  &--big {
+    font-size: 20px;
+  }
 }

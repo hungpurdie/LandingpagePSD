@@ -134,9 +134,15 @@ main {
   line-height: 1.5555555556;
   margin-bottom: 30px;
 }
+.heading--big {
+  font-size: 60px;
+}
 
 .text {
   line-height: 1.8888888889;
+}
+.text--big {
+  font-size: 20px;
 }
 
 .header {
@@ -269,6 +275,241 @@ main {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.experience {
+  padding-bottom: 200px;
+}
+.experience-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 70px;
+}
+.experience-year {
+  position: relative;
+  z-index: 2;
+  background: url("../images/img7.png") no-repeat 50%/300%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.experience-mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.experience-dots {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+}
+.experience-number {
+  font-size: 400px;
+  font-weight: 800;
+  color: #f56766;
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+.experience-content {
+  max-width: 470px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.partner {
+  margin-bottom: 200px;
+}
+.partner-header {
+  margin-bottom: 95px;
+  text-align: center;
+}
+.partner-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+}
+.partner-item {
+  background-color: #2b3139;
+  border-radius: 4px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner-item:hover img {
+  opacity: 0.3;
+}
+
+.review {
+  padding-bottom: 190px;
+}
+.review-header {
+  max-width: 500px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+.review-item {
+  max-width: 840px;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #222831;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 75px 100px 65px;
+  position: relative;
+}
+.review-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+}
+.review-desc {
+  color: white;
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.review-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100rem;
+  object-fit: cover;
+}
+.contact {
+  margin-bottom: -300px;
+}
+.contact-main {
+  padding: 135px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: url("../images/img9.png") no-repeat center;
+  background-color: #1e242e;
+  border-radius: 12px;
+  position: relative;
+}
+.contact-person {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+.contact-liquid {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100px;
+  pointer-events: none;
+}
+.contact-content {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 9;
+}
+.contact-desc {
+  margin-bottom: 60px;
+}
+
+.footer-top {
+  padding: 450px 0px 100px;
+  background-color: #2b3139;
+}
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 130px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.footer-desc {
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.875;
+}
+.footer .social {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+.footer .social-item {
+  cursor: pointer;
+  color: #6a727f;
+}
+.footer .social-item:hover {
+  color: white;
+}
+.footer-heading {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.footer-links {
+  list-style: none;
+}
+.footer-item {
+  margin-bottom: 30px;
+}
+.footer-link {
+  display: inline-block;
+  color: #6a727f;
+}
+.footer-info {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.footer-info li {
+  margin-bottom: 15px;
+  line-height: 1.875;
+}
+.footer-highlight {
+  color: white;
+}
+.footer-bottom {
+  background-color: #222831;
+  line-height: 1.6;
+}
+.footer-bottom a {
+  color: white;
+}
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.footer-rocket {
+  color: white;
+  border-radius: 4px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #f56766, #f58826);
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
 /*# sourceMappingURL=app.css.map */
