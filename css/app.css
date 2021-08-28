@@ -85,7 +85,6 @@ section[id] {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  background-color: #222831;
   background: url("../images/img1.jpg") no-repeat top/100%;
 }
 
@@ -93,10 +92,6 @@ section[id] {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-main {
-  min-height: 200vh;
 }
 
 .btn {
@@ -211,8 +206,40 @@ section {
   font-weight: 600;
 }
 @media screen and (max-width: 1023px) {
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.25s linear;
+  }
+  .menu.is-active {
+    transform: translateX(0);
+  }
   .menu-list {
-    display: none;
+    flex-direction: column;
+    height: 100%;
+    padding: 50px;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .menu-link {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    color: #393e46;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  .menu-link:hover {
+    color: white;
+    background-color: #f56766;
   }
 }
 

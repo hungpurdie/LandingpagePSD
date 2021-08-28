@@ -38,7 +38,6 @@ section[id] {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  background-color: $gray-darker;
   background: url('../images/img1.jpg') no-repeat top / 100%;
 }
 .container {
@@ -46,11 +45,6 @@ section[id] {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-main {
-  min-height: 200vh;
-}
-
 .btn {
   text-align: center;
   font-weight: bold;

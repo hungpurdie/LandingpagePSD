@@ -32,8 +32,38 @@
   }
 
   @include maxWidth(1023px) {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.25s linear;
+    &.is-active {
+      transform: translateX(0);
+    }
     &-list {
-      display: none;
+      flex-direction: column;
+      height: 100%;
+      padding: 50px;
+    }
+    &-item {
+      width: 100%;
+    }
+    &-link {
+      display: block;
+      width: 100%;
+      padding: 15px 20px;
+      color: $gray;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      &:hover {
+        color: white;
+        background-color: $primary-color;
+      }
     }
   }
 }
