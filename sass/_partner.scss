@@ -1,5 +1,5 @@
 .partner {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   &-header {
     margin-bottom: 95px;
     text-align: center;
@@ -19,6 +19,19 @@
     align-items: center;
     &:hover img {
       opacity: 0.3;
+    }
+  }
+  display: block;
+  @include maxWidth(1599px) {
+    padding-bottom: 100px;
+  }
+  @include maxWidth(767px) {
+    &-header {
+      margin-bottom: 40px;
+    }
+    &-list {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
     }
   }
 }

@@ -1,5 +1,5 @@
 .header {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(white, 0.3);
   &-main {
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,11 @@
     display: flex;
     align-items: center;
     gap: 0px 50px;
+  }
+  @include maxWidth(1599px) {
+    &-main {
+      padding: 20px 0;
+    }
   }
 }
 
@@ -24,5 +29,11 @@
   }
   &-link {
     font-weight: 600;
+  }
+
+  @include maxWidth(1023px) {
+    &-list {
+      display: none;
+    }
   }
 }

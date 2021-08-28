@@ -1,5 +1,4 @@
 .work {
-  padding-top: 190px;
   padding-bottom: 190px;
 
   &-header {
@@ -37,5 +36,21 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+  display: block;
+  @include minWidth(1599px) {
+    padding-bottom: 100px;
+  }
+
+  @include minWidth(1023px) {
+    &-header {
+      padding-bottom: 50px;
+    }
+  }
+
+  @include minWidth(1023px) {
+    &-list {
+      grid-template-rows: 100px 50px 100px;
+    }
   }
 }
